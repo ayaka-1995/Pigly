@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigly</title>
+    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+</head>
+<body>
+    <div class="contact-form">
+        <div class="contact-form_content">
+            <div class="contact-form__heading">
+            <h1>PiGLy</h1>
+            <h2>新規会員登録</h2>
+            </div>
+            <div class="contact-form__step">
+                <p>STEP1 アカウント情報の登録</p>
+            </div>
+            <form class="form">
+                <div class="form__group">
+                    <div class="form__group-title">
+                        <span class="form__label--item">お名前</span>
+                    </div>
+                    <div class="form__group-content">
+                        <div class="form__input--text">
+                            <input type="text" name="name" placeholder="名前を入力" />
+                        </div>
+                        <div class="form__error">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <div class="form__group-title">
+                        <span class="form__label--item">メールアドレス</span>
+                    </div>
+                    <div class="form__group-content">
+                        <div class="form__input-text">
+                            <input type="email" name="email" placeholder="メールアドレスを入力">
+                        </div>
+                        <div class="form__error">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <div class="form__group-title">
+                        <span class="form__label--item">パスワード</span>
+                    </div>
+                    <div class="form__input-text">
+                        <input type="password" name="password" placeholder="パスワードを入力">
+                    </div>
+                    <div class="form__error"></div>
+                </div>
+                <div class="form__button">
+                    <button class="form__button-submit" type="submit">次に進む</button>
+                    <p class="login-link"><a href="#">ログインはこちら</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
