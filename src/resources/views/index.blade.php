@@ -27,8 +27,8 @@
                         <span class="form__label--item">お名前</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--text">
-                            <input type="text" name="name" placeholder="名前を入力" />
+                        <div class="form__textarea">
+                            <textarea name="name" placeholder="名前を入力" ></textarea>
                         </div>
                         <div class="form__error">
 
@@ -40,8 +40,8 @@
                         <span class="form__label--item">メールアドレス</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input-text">
-                            <input type="email" name="email" placeholder="メールアドレスを入力">
+                        <div class="form__textarea">
+                            <textarea name="email" placeholder="メールアドレスを入力"></textarea>
                         </div>
                         <div class="form__error">
 
@@ -52,8 +52,8 @@
                     <div class="form__group-title">
                         <span class="form__label--item">パスワード</span>
                     </div>
-                    <div class="form__input-text">
-                        <input type="password" name="password" placeholder="パスワードを入力">
+                    <div class="form__textarea">
+                        <textarea name="password" placeholder="パスワードを入力"></textarea>
                     </div>
                     <div class="form__error"></div>
                 </div>
