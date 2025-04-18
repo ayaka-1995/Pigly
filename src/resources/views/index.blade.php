@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="contact-form">
-        <div class="contact-form_content">
+        <div class="contact-form__form">
             <div class="contact-form__heading">
             <h1>PiGLy</h1>
             <h2>新規会員登録</h2>
@@ -27,11 +27,11 @@
                         <span class="form__label--item">お名前</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__textarea">
-                            <textarea name="name" placeholder="名前を入力" ></textarea>
+                        <div class="form__input">
+                            <input type="text" name="name" placeholder="名前を入力" >
                         </div>
                         <div class="form__error">
-
+                            名前を入力してください
                         </div>
                     </div>
                 </div>
@@ -40,11 +40,11 @@
                         <span class="form__label--item">メールアドレス</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__textarea">
-                            <textarea name="email" placeholder="メールアドレスを入力"></textarea>
+                        <div class="form__input">
+                            <input type="email" name="email" placeholder="メールアドレスを入力">
                         </div>
                         <div class="form__error">
-
+                            メールアドレスを入力してください
                         </div>
                     </div>
                 </div>
@@ -52,10 +52,12 @@
                     <div class="form__group-title">
                         <span class="form__label--item">パスワード</span>
                     </div>
-                    <div class="form__textarea">
-                        <textarea name="password" placeholder="パスワードを入力"></textarea>
+                    <div class="form__input">
+                        <input type="password" name="password" placeholder="パスワードを入力">
                     </div>
-                    <div class="form__error"></div>
+                    <div class="form__error">
+                        パスワードを入力してください
+                    </div>
                 </div>
                 <div class="form__button">
                     <button class="form__button-submit" type="submit">次に進む</button>
