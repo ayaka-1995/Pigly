@@ -14,4 +14,5 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', [ContactController::class, 'index']);
+Route::get('/register/step1', [ContactController::class, 'register1']);
+Route::get('/register/step2', [ContactController::class, 'register2']);

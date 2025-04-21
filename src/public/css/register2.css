@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: "Noto Serif JP", "Lora", "Inika";
+    background: linear-gradient(135deg, #ffdce3, #e3c0ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-form__form {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 580px;
+}
+
+.contact-form__heading h1 {
+    font-size: 60px;
+    font-weight: 400;
+    color: #ec87ef;
+    margin: 0;
+    text-align: center;
+    font-family: "Inika";
+}
+
+.contact-form__heading h2 {
+    font-size: 30px;
+    font-family: "Hiragino Mincho Pro";
+    color: #333;
+    text-align: center;
+    margin: 8px 0 16px;
+}
+
+.contact-form__step p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}

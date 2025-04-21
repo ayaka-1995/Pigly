@@ -100,7 +100,7 @@ body {
     color: #ccc;
 }
 
-.form__error{
+.form__error {
     color: #f65a5a;
     font-family: Hiragino Kaku Gothic Pro;
     font-weight: 300px;
@@ -108,7 +108,7 @@ body {
 }
 
 .form__button {
-    margin-top: 32px;
+    margin-top: 40px;
 }
 
 .form__button-submit {
