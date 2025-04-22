@@ -16,3 +16,4 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/register/step1', [ContactController::class, 'register1']);
 Route::get('/register/step2', [ContactController::class, 'register2']);
+Route::get('/login',[ContactController::class,'login']);

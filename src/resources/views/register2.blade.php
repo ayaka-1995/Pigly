@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="contact-form">
+    <div class="contact-form" action="/contacts/register2" method="post">
+        @csrf
         <div class="contact-form__form">
             <div class="contact-form__heading">
             <h1>PiGLy</h1>
