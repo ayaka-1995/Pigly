@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="contact-form" action="/contacts/register1" method="post">
+    <div class="contact-form" action="/register/step1" method="post">
         @csrf
         <div class="contact-form__form">
             <div class="contact-form__heading">
@@ -22,17 +22,20 @@
             <div class="contact-form__step">
                 <p>STEP1 アカウント情報の登録</p>
             </div>
-            <form class="form">
+            <form class="form" action="{{ route('register.step1.post') }}" method="POST">
+                @csrf
                 <div class="form__group">
                     <div class="form__group-title">
                         <span class="form__label--item">お名前</span>
                     </div>
                     <div class="form__group-content">
                         <div class="form__input">
-                            <input type="text" name="name" placeholder="名前を入力" >
+                            <input type="text" name="name" placeholder="名前を入力" value="{{ old('name') }}" >
                         </div>
                         <div class="form__error">
-                            名前を入力してください
+                            @error('name')
+                            {{ $message}}
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -42,10 +45,12 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input">
-                            <input type="email" name="email" placeholder="メールアドレスを入力">
+                            <input type="email" name="email" placeholder="メールアドレスを入力" value="{{old('email') }}">
                         </div>
                         <div class="form__error">
-                            メールアドレスを入力してください
+                            @error('email')
+                            {{ $message}}
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -57,7 +62,9 @@
                         <input type="password" name="password" placeholder="パスワードを入力">
                     </div>
                     <div class="form__error">
-                        パスワードを入力してください
+                        @error('password')
+                        {{ $message}}
+                        @enderror
                     </div>
                 </div>
                 <div class="form__button">
